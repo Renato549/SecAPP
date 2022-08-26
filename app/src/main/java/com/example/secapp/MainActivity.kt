@@ -33,23 +33,17 @@ class MainActivity : AppCompatActivity() {
         }
 
         Log.d("E2", "Fin de la ejecucion de onCreate de MainActivity");
-
-        override fun onStart(){
-            Log.d("MYAPP","Fin de la ejecucion");
-            super.onStart()
-        }
-        override fun onRestart() {
-            Log.d("MYAPP","Fin de la ejecucion");
-            super.onRestart()
-
-        }
-        override fun onResume() {
-            Log.d("MYAPP","Fin de la ejecucion");
-            super.onResume()
-
-        }
-
-
-
+    }
+    override fun onStart(){
+        Log.d("MYAPP","Fin de la ejecucion");
+        super.onStart()
+    }
+    override fun onRestart() {
+        Log.d("MYAPP","Fin de la ejecucion");
+        super.onRestart()
+    }
+    override fun onResume() {
+        Log.d("MYAPP","Fin de la ejecucion");
+        super.onResume()
     }
 }

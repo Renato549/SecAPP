@@ -3,6 +3,7 @@ package com.example.secapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 
@@ -27,5 +28,18 @@ class ActivityTarget : AppCompatActivity() {
         botonRegresar.setOnClickListener {
             val myIntent : Intent = Intent(this,MainActivity::class.java)
         }
+
+    }
+    override fun onStart(){
+        Log.d("MYAPP","Fin de la ejecucion");
+        super.onStart()
+    }
+    override fun onRestart() {
+        Log.d("MYAPP","Fin de la ejecucion");
+        super.onRestart()
+    }
+    override fun onResume() {
+        Log.d("MYAPP","Fin de la ejecucion");
+        super.onResume()
     }
 }
